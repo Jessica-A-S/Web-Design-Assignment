@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Petite Treats - About Us</title>
+		<meta charset="utf-8"/>
+		<link href="style1.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="script.js"> </script>
+	</head>
+	<body>
+		<header id="header">Petite Treats</header>
+		<ul id="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="specials.html">Specials</a></li>
+		</ul>
+		<div id="content">
+			<h1>Sign up to Petite Treats weekly specials!</h1>
+			<form name="myForm" action="action_page.php" onsubmit="return validateForm()" method="post">
+				<p>
+					<label for="name"><b>Name: </b></label>
+					<input type="text" name="name" id="name">
+				</p>
+				<p>
+					<label for="email"><b>Email: </b></label>
+					<input type="text" name="email" id="email">
+				</p>
+				<p>
+					<label for="birthday"><b>Birthday: </b></label>
+					<input type="date" name="birthday" id="birthday">
+				</p>
+				<p>
+				<fieldset>
+					<legend><b>Product Interests:</b></legend>
+					<p>
+						<input type="checkbox" id="donuts" value="Donuts" name="productinterests[]">
+						<label for="donuts">Donuts </label>
+					</p>
+					<p>
+						<input type="checkbox" id="vanillaslice" value="Vanilla Slice" name="productinterests[]">
+						<label for="vanillaslice">Vanilla Slice </label>						
+					</p>
+					<p>
+						<input type="checkbox" id="randytart" value="Randy Tart" name="productinterests[]">
+						<label for="randytart">Randy Tart </label>						
+					</p>
+					<p>
+						<input type="checkbox" id="custardtart" value="Custard Tart" name="productinterests[]">
+						<label for="custardtart">Custard Tart </label>						
+					</p>
+					<p>
+						<input type="checkbox" id="raspberrycheesecake" value="Raspberry Cheesecake" name="productinterests[]">
+						<label for="raspberrycheesecake">Raspberry Cheesecake </label>													
+					</p>
+					<p>
+						<input type="checkbox" id="applecakeslice" value="Apple Cake Slice" name="productinterests[]">
+						<label for="applecakeslice">Apple Cake Slice </label>													
+					</p>
+				</fieldset>
+				<br>
+				<input type="submit" value="Submit">
+				<input type="reset" value="Reset">
+			</form>
+		</div>
+		<div id="footer">
+			<ul id="navbar">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="specials.html">Specials</a></li>
+			</ul>
+			<p>Contact: 0455 5555 555</p>
+			<p>Catering: 0433 3333 333</p>
+			<p>Address: 123 Prize Lane, Kirwan, QLD</p>
+		</div>
+	</body>
+</html>
